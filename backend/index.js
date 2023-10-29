@@ -32,7 +32,7 @@ const options = {
 const swaggerSpec = swaggerJSdoc(options);
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
-app.use(limiter);
+// app.use(limiter);
 app.use("/users", userRouter);
 app.use("/books", bookRouter);
 
