@@ -19,7 +19,7 @@ export const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/users/register",
+        "https://nem111-assignment.onrender.com/users/register",
         payload,
         {
           headers: {
@@ -33,7 +33,7 @@ export const Signup = () => {
     }
 
     // CODE WRITTEN USING FETCH
-    // fetch("http://localhost:8080/users/register", {
+    // fetch("https://nem111-assignment.onrender.com/users/register", {
     //   method: "POST",
     //   headers: {
     //     "Content-type": "application/json",

@@ -13,11 +13,14 @@ export const GetBooks = () => {
         return;
       }
 
-      const response = await axios.get("http://localhost:8080/books", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await axios.get(
+        "https://nem111-assignment.onrender.com/books",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       const books = response.data.books;
       setBooks(books);
       console.log(books);
@@ -30,7 +33,7 @@ export const GetBooks = () => {
     fetchData();
 
     // CODE WRITTEN USING FETCH
-    // fetch("http://localhost:8080/notes", {
+    // fetch("https://nem111-assignment.onrender.com/notes", {
     //   headers: {
     //     Authorization: `Bearer ${localStorage.getItem("token")}`,
     //   },

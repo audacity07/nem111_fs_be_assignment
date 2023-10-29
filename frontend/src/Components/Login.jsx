@@ -13,7 +13,7 @@ export const Login = () => {
 
     try {
       let response = await axios.post(
-        `http://localhost:8080/users/login`,
+        `https://nem111-assignment.onrender.com/users/login`,
         payload,
         {
           headers: {
@@ -29,7 +29,7 @@ export const Login = () => {
     }
 
     // CODE WRITTEN USING FETCH
-    //   fetch("http://localhost:8080/users/login", {
+    //   fetch("https://nem111-assignment.onrender.com/users/login", {
     //     method: "POST",
     //     headers: {
     //       "Content-type": "application/json",

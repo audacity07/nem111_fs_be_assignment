@@ -10,7 +10,7 @@ export const DeleteBook = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.delete(
-        `http://localhost:8080/books/delete/${id}`,
+        `https://nem111-assignment.onrender.com/books/delete/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -23,7 +23,7 @@ export const DeleteBook = () => {
     }
 
     // CODE WRITTEN USING FETCH
-    // fetch("http://localhost:8080/books/add", {
+    // fetch("https://nem111-assignment.onrender.com/books/add", {
     //   method: "POST",
     //   headers: {
     //     "Content-type": "application/json",

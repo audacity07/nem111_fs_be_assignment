@@ -14,7 +14,7 @@ export const UpdateBook = () => {
       };
 
       const response = await axios.patch(
-        `http://localhost:8080/books/update/${id}`,
+        `https://nem111-assignment.onrender.com/books/update/${id}`,
         payload,
         {
           headers: {
@@ -30,7 +30,7 @@ export const UpdateBook = () => {
     }
 
     // CODE WRITTEN USING FETCH
-    // fetch("http://localhost:8080/books/add", {
+    // fetch("https://nem111-assignment.onrender.com/books/add", {
     //   method: "POST",
     //   headers: {
     //     "Content-type": "application/json",

@@ -18,7 +18,7 @@ export const AddBook = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:8080/books/add",
+        "https://nem111-assignment.onrender.com/books/add",
         payload,
         {
           headers: {
@@ -34,7 +34,7 @@ export const AddBook = () => {
     }
 
     // CODE WRITTEN USING FETCH
-    // fetch("http://localhost:8080/books/add", {
+    // fetch("https://nem111-assignment.onrender.com/books/add", {
     //   method: "POST",
     //   headers: {
     //     "Content-type": "application/json",
